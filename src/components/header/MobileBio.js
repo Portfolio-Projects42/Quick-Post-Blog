@@ -1,7 +1,7 @@
 import React from "react"
 
 import "./header.css"
-import willjw3 from "../../images/willjw3.jpg"
+import willjw3 from "../../images/bgoon.png"
 
 const MobileBio = (props) => {
 
