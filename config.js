@@ -10,11 +10,11 @@ module.exports = {
     bio: "Self-taught web developer and musician",
     contacts: {
       linkedin: "https://www.linkedin.com/in/bgoonz-65234a170/",
-      github: "https://github.com/willjw3",
+      github: "https://github.com/bgoonz",
       stackoverflow:
         "https://stackoverflow.com/users/10262432/bgoonz?tab=profile",
-      freecodecamp: "https://www.freecodecamp.org/willjw3",
-      twitter: "https://twitter.com/willjw3",
+      freecodecamp: "https://www.freecodecamp.org/bgoonz",
+      twitter: "https://twitter.com/bgoonz",
     },
   },
   labels: [
