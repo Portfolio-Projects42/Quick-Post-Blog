@@ -2,7 +2,7 @@
 
 module.exports = {
   url: "https://developer-diary.netlify.com",
-  title: "Developer Diary",
+  title: "Developer Log",
   tagline: "Autodidact developer and sometimes hoop-jumper",
   copyright: "© 2019 willjw3, All rights reserved",
   author: {
