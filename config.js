@@ -4,7 +4,7 @@ module.exports = {
   url: "https://developer-diary.netlify.com",
   title: "Developer Log",
   tagline: "Electrical Engineer and Web Developer",
-  copyright: "© 2021 willjw3, All rights reserved",
+  copyright: "© 2021 fwilljw3, All rights reserved",
   author: {
     name: "WILL JAY",
     bio: "Self-taught web developer and whisky aficionado",
