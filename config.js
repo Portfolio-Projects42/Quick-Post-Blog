@@ -6,7 +6,7 @@ module.exports = {
   tagline: "Electrical Engineer and Web Developer",
   copyright: "© 2021 bgoonz, All rights reserved",
   author: {
-    name: "WILL JAY",
+    name: "Bryan Guner",
     bio: "Self-taught web developer and whisky aficionado",
     contacts: {
       linkedin: "https://www.linkedin.com/in/bgoonz-65234a170/",
