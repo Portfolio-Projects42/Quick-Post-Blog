@@ -7,7 +7,7 @@ module.exports = {
   copyright: "© 2021 bgoonz, All rights reserved",
   author: {
     name: "Bryan Guner",
-    bio: "Self-taught web developer and whisky aficionado",
+    bio: "Self-taught web developer and music aficionado",
     contacts: {
       linkedin: "https://www.linkedin.com/in/bgoonz-65234a170/",
       github: "https://github.com/willjw3",
