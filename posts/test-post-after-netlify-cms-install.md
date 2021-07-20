@@ -3,7 +3,7 @@ tags:
   - graphql
   - gatsby
 published: true
-date: 2020-01-05T13:54:07.809Z
+date: '2021-07-20T08:54'
 title: Test Post After Netlify CMS Install
 ---
 *Crossing Fingers...*
