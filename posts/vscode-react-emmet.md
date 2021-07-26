@@ -1,6 +1,8 @@
 ---
-title: 'Using Emmet with React in Visual Studio Code - 2019'
-tags: ["react", "vscode"]
+title: How to Convert A Folder Of Notes Into A Documentation Website
+tags:
+  - react
+  - vscode
 published: true
 date: '2019-03-20'
 ---
