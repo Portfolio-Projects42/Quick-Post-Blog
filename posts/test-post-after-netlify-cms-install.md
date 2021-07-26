@@ -4,7 +4,7 @@ tags:
   - gatsby
 published: true
 date: '2021-07-20T08:54'
-title: Test Post After Netlify CMS Install
+title: What I've Learned About Netlify
 ---
 *Crossing Fingers...*
 
