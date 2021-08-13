@@ -4,7 +4,7 @@ tags:
   - gatsby
 published: true
 date: '2021-07-20T08:54'
-title: What I've Learned About Netlify
+title: How To Be A Better Developer
 ---
 *Crossing Fingers...*
 
