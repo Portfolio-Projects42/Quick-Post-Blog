@@ -1,5 +1,5 @@
 ---
-title: How To Add Backend Functionality To A Frontend App
+title: Rejex In Javascript
 tags:
   - javascript
 published: true
