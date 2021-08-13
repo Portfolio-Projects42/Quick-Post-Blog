@@ -5,117 +5,185 @@ tags:
 published: true
 date: '2019-01-06'
 ---
+# Patterns and flags
 
-[Video at YouTube](https://youtu.be/vAP8NLDzGwc). <br>
+Regular expressions are patterns that provide a powerful way to search and replace in text.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/vAP8NLDzGwc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
----
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sapien nisi, consequat nec dolor ut, lobortis vestibulum nunc. Nulla facilisi. Suspendisse leo urna, pulvinar ut pretium sit amet, consequat eget sapien. Nam ultricies in nulla finibus feugiat. Maecenas lacinia, lorem quis egestas convallis, tortor nunc consectetur est, vel finibus odio dui et nunc.
-### noGlobalFlag.js
+In JavaScript, they are available via the [RegExp](mdn:js/RegExp) object, as well as being integrated in methods of strings.
 
-```
-let str1 = "The sun is out today.";
-let str2 = "Let's go for a run today."
-let str3 = "Regular expressions can sometimes be fun."
-let str4 = "A hot dog without a bun ain't no fun."
-let unRegex = /.un/;
-console.log(unRegex.test(str1));
+## Regular Expressions
 
-console.log(unRegex.test(str2));
+A regular expression (also "regexp", or just "reg") consists of a _pattern_ and optional _flags_.
 
-console.log(unRegex.test(str3));
+There are two syntaxes that can be used to create a regular expression object.
 
-console.log(unRegex.test(str4));
-```
-<br>
+The "long" syntax:
 
-Proin quis ante ut felis lacinia dignissim quis ac risus. Vestibulum a maximus est. Pellentesque malesuada eros ac diam aliquam, non pulvinar magna sodales.
-
-```
-true
-true
-true
-true
-[Finished in 0.883s]
-```
-<br>
-
- Fusce hendrerit malesuada quam, ut accumsan massa efficitur et. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam vitae ornare sem, eget volutpat mauris. Praesent aliquet condimentum dui non bibendum. Nam dapibus rutrum mi sit amet luctus. Proin id vehicula risus. Nullam dictum, elit sit amet molestie eleifend, felis dolor scelerisque risus, sed dictum odio dolor id justo. Integer consectetur dui non tortor scelerisque, non vulputate sem laoreet.
-
-```
-true
-true
-true
-false
-[Finished in 0.892s]
-```
-<br>
-
-Nunc blandit purus sit amet justo vehicula, at venenatis ante tempus. Integer sagittis ultrices lorem, ut faucibus erat molestie quis. Phasellus semper orci nisl, egestas maximus risus porta sit amet. Fusce vitae egestas sem. Nunc sagittis, erat sodales maximus tempus, magna diam iaculis ex, ut feugiat odio libero sit amet lectus. Suspendisse elit turpis, volutpat laoreet consequat ac, ultricies eu sem. Donec non orci in justo porta iaculis. Donec pulvinar nunc quis viverra volutpat. Quisque et orci non enim sodales eleifend. Etiam in enim id nulla posuere lacinia. Ut rutrum pharetra nisi quis feugiat.
-
-### globalFlag.js
-```
-let str1 = "The sun is out today.";
-let str2 = "Let's go for a run today."
-let str3 = "Regular expressions can sometimes be fun."
-let str4 = "A hot dog without a bun ain't no fun."
-let unRegex = /.un/g;
-
-console.log(unRegex.test(str1));
-console.log(unRegex.lastIndex);
-
-console.log(unRegex.test(str2));
-console.log(unRegex.lastIndex);
-
-console.log(unRegex.test(str3));
-console.log(unRegex.lastIndex);
-
-console.log(unRegex.test(str4));
-console.log(unRegex.lastIndex);
-```
-<br>
-
-Cras arcu lectus, euismod a lacinia a, cursus vitae magna. Aenean ultricies, enim id pharetra ultricies, ligula lectus congue tellus, ac lobortis ex elit at nulla. Sed lobortis vitae tortor sed laoreet. Praesent porta bibendum ullamcorper.
-
-```
-true
-7
-true
-18
-true
-40
-false
-0
-[Finished in 0.911s]
-```
-<br>
-
-Integer fermentum euismod risus, vitae fringilla erat condimentum at. Suspendisse luctus egestas dui, eu dictum sem tincidunt sed. Sed efficitur eget orci eu dictum. Etiam faucibus, enim nec tincidunt sollicitudin, diam neque ultricies magna, eget ultrices sem tortor non justo. Vestibulum viverra tincidunt elit sit amet gravida. Morbi sed tempus odio. Nunc efficitur ultricies elit et porta. Praesent finibus placerat felis, vitae efficitur ligula sagittis non. Nam fringilla malesuada ligula ullamcorper dignissim.
-
-Morbi mauris lacus, vehicula eget ullamcorper et, fringilla at ipsum. Nam tempus felis ex, congue varius urna consectetur eget. Cras tempor condimentum accumsan. In hac habitasse platea dictumst. Nulla pharetra mauris enim, quis dictum ipsum dictum sed. Sed luctus eros volutpat, luctus augue et, tempus ante. Sed imperdiet diam id luctus faucibus. Sed ullamcorper suscipit arcu, in dictum lectus ultricies et. Donec accumsan a ipsum sed aliquet. Nulla auctor justo eget tincidunt egestas. Cras blandit, ante vitae facilisis hendrerit, justo mauris fermentum diam, id congue diam velit eu ipsum. Nullam pulvinar auctor tincidunt. Maecenas felis velit, bibendum ac purus nec, cursus lacinia nulla. Sed posuere orci sapien, id accumsan eros feugiat vel. Aenean convallis lacinia orci. In metus elit, iaculis vitae nisi vel, iaculis vehicula mi.
-
-```
-let str1 = "The sun is out today.";
-let str2 = "Let's go for a run today."
-let str3 = "Regular expressions can sometimes be fun."
-let str4 = "A hot dog without a bun ain't no fun."
-let unRegex = /.un/g;
-
-var myMatches = str4.match(unRegex);
-console.log(myMatches);
+```js
+regexp = new RegExp("pattern", "flags");
 ```
 
-<br>
+And the "short" one, using slashes `"/"`:
 
-Nam elementum augue vel nulla consectetur elementum.
-
-```
-[ 'bun', 'fun' ]
-[Finished in 1.845s]
+```js
+regexp = /pattern/; // no flags
+regexp = /pattern/gim; // with flags g,m and i (to be covered soon)
 ```
 
-<br>
+Slashes `pattern:/.../` tell JavaScript that we are creating a regular expression. They play the same role as quotes for strings.
 
-[MDN Web Docs - test()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test)<br>
-[MDN Web Docs - exec()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec)
+In both cases `regexp` becomes an instance of the built-in `RegExp` class.
 
+The main difference between these two syntaxes is that pattern using slashes `/.../` does not allow for expressions to be inserted (like string template literals with `${...}`). They are fully static.
+
+Slashes are used when we know the regular expression at the code writing time -- and that's the most common situation. While `new RegExp` is more often used when we need to create a regexp "on the fly" from a dynamically generated string. For instance:
+
+```js
+let tag = prompt("What tag do you want to find?", "h2");
+
+let regexp = new RegExp(`<${tag}>`); // same as /<h2>/ if answered "h2" in the prompt above
+```
+
+## Flags
+
+Regular expressions may have flags that affect the search.
+
+There are only 6 of them in JavaScript:
+
+`pattern:i`
+: With this flag the search is case-insensitive: no difference between `A` and `a` (see the example below).
+
+`pattern:g`
+: With this flag the search looks for all matches, without it -- only the first match is returned.
+
+`pattern:m`
+: Multiline mode (covered in the chapter <info:regexp-multiline-mode>).
+
+`pattern:s`
+: Enables "dotall" mode, that allows a dot `pattern:.` to match newline character `\n` (covered in the chapter <info:regexp-character-classes>).
+
+`pattern:u`
+: Enables full Unicode support. The flag enables correct processing of surrogate pairs. More about that in the chapter <info:regexp-unicode>.
+
+`pattern:y`
+: "Sticky" mode: searching at the exact position in the text (covered in the chapter <info:regexp-sticky>)
+
+```smart header="Colors"
+From here on the color scheme is:
+
+- regexp -- `pattern:red`
+- string (where we search) -- `subject:blue`
+- result -- `match:green`
+```
+
+## Searching: str.match
+
+As mentioned previously, regular expressions are integrated with string methods.
+
+The method `str.match(regexp)` finds all matches of `regexp` in the string `str`.
+
+It has 3 working modes:
+
+1. If the regular expression has flag `pattern:g`, it returns an array of all matches:
+
+   ```js run
+   let str = "We will, we will rock you";
+
+   alert(str.match(/we/gi)); // We,we (an array of 2 substrings that match)
+   ```
+
+   Please note that both `match:We` and `match:we` are found, because flag `pattern:i` makes the regular expression case-insensitive.
+
+2. If there's no such flag it returns only the first match in the form of an array, with the full match at index `0` and some additional details in properties:
+
+   ```js run
+   let str = "We will, we will rock you";
+
+   let result = str.match(/we/i); // without flag g
+
+   alert(result[0]); // We (1st match)
+   alert(result.length); // 1
+
+   // Details:
+   alert(result.index); // 0 (position of the match)
+   alert(result.input); // We will, we will rock you (source string)
+   ```
+
+   The array may have other indexes, besides `0` if a part of the regular expression is enclosed in parentheses. We'll cover that in the chapter <info:regexp-groups>.
+
+3. And, finally, if there are no matches, `null` is returned (doesn't matter if there's flag `pattern:g` or not).
+
+   This a very important nuance. If there are no matches, we don't receive an empty array, but instead receive `null`. Forgetting about that may lead to errors, e.g.:
+
+   ```js run
+   let matches = "JavaScript".match(/HTML/); // = null
+
+   if (!matches.length) {
+     // Error: Cannot read property 'length' of null
+     alert("Error in the line above");
+   }
+   ```
+
+   If we'd like the result to always be an array, we can write it this way:
+
+   ```js run
+   let matches = "JavaScript".match(/HTML/)*!* || []*/!*;
+
+   if (!matches.length) {
+     alert("No matches"); // now it works
+   }
+   ```
+
+## Replacing: str.replace
+
+The method `str.replace(regexp, replacement)` replaces matches found using `regexp` in string `str` with `replacement` (all matches if there's flag `pattern:g`, otherwise, only the first one).
+
+For instance:
+
+```js run
+// no flag g
+alert("We will, we will".replace(/we/i, "I")); // I will, we will
+
+// with flag g
+alert("We will, we will".replace(/we/gi, "I")); // I will, I will
+```
+
+The second argument is the `replacement` string. We can use special character combinations in it to insert fragments of the match:
+
+| Symbols              | Action in the replacement string                                                                                                  |
+| -------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| `$&`                 | inserts the whole match                                                                                                           |
+| <code>$&#096;</code> | inserts a part of the string before the match                                                                                     |
+| `$'`                 | inserts a part of the string after the match                                                                                      |
+| `$n`                 | if `n` is a 1-2 digit number, then it inserts the contents of n-th parentheses, more about it in the chapter <info:regexp-groups> |
+| `$<name>`            | inserts the contents of the parentheses with the given `name`, more about it in the chapter <info:regexp-groups>                  |
+| `$$`                 | inserts character `$`                                                                                                             |
+
+An example with `pattern:$&`:
+
+```js run
+alert("I love HTML".replace(/HTML/, "$& and JavaScript")); // I love HTML and JavaScript
+```
+
+## Testing: regexp.test
+
+The method `regexp.test(str)` looks for at least one match, if found, returns `true`, otherwise `false`.
+
+```js run
+let str = "I love JavaScript";
+let regexp = /LOVE/i;
+
+alert(regexp.test(str)); // true
+```
+
+Later in this chapter we'll study more regular expressions, walk through more examples, and also meet other methods.
+
+Full information about the methods is given in the article <info:regexp-methods>.
+
+## Summary
+
+- A regular expression consists of a pattern and optional flags: `pattern:g`, `pattern:i`, `pattern:m`, `pattern:u`, `pattern:s`, `pattern:y`.
+- Without flags and special symbols (that we'll study later), the search by a regexp is the same as a substring search.
+- The method `str.match(regexp)` looks for matches: all of them if there's `pattern:g` flag, otherwise, only the first one.
+- The method `str.replace(regexp, replacement)` replaces matches found using `regexp` with `replacement`: all of them if there's `pattern:g` flag, otherwise only the first one.
+- The method `regexp.test(str)` returns `true` if there's at least one match, otherwise, it returns `false`.
