@@ -1,8 +1,10 @@
 ---
 title: How to Convert A Folder Of Notes Into A Documentation Website
 tags:
-  - react
-  - vscode
+  - python
+  - machine learning
+  - neural networks
+  - artificial intelligence
 published: true
 date: '2019-03-20'
 ---
