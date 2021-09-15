@@ -1,6 +1,6 @@
 ---
 title: 'Netlify CMS Open Authoring'
-tags: ["nodejs", "express","netlify",""]
+tags: ["nodejs", "express","netlify","CMS"]
 published: true
 date: '2018-12-29'
 ---
