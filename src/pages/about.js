@@ -32,7 +32,9 @@ const AboutPage = (props) => {
                     <SEO title="About" />
                     <div className="mt-3">
                         <h2 className="heading">About</h2>
-                        <p><i>Developer Diary is a Gatsby Starter blog template created with web developers in mind, but really, anyone can use it. It's totally usable right out of the box, but minimalist enough to be easily modifiable to suit your needs.</i></p>
+                        <p><i>🔭 Contract Web Development Relational Concepts🌱 I'm currently learning React/Redux, Python, Java, Express, jQuery👯 I'm looking to collaborate on Any web audio or open source educational tools.
+🤝 I'm looking for help with Learning React👨‍💻 All of my projects are available at github📝 I regularly write articles on medium && Web-Dev-Resource-Hub
+💬 Ask me about Anything:📫 How to reach me bryan.guner@gmail.com⚡ Fun fact I played Bamboozle Music Festival at the Meadowlands Stadium Complex when I was 14.</i></p>
                         <br />
                         <h4>Features</h4>
                         <div>
