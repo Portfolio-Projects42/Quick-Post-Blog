@@ -27,9 +27,7 @@ const AboutPage = (props) => {
                 <div className="sidebar px-4 py-2">
                     <Sidebar />
                 </div>
-🔭 Contract Web Development Relational Concepts
-
-🌱 I'm currently learning React/Redux, Python, Java, Express, jQuery
+🔭 Contract Web Development Relational Concepts🌱 I'm currently learning React/Redux, Python, Java, Express, jQuery
 
 👯 I'm looking to collaborate on Any web audio or open source educational tools.
 
