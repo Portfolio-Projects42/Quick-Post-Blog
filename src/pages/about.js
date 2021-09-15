@@ -28,18 +28,8 @@ const AboutPage = (props) => {
                     <Sidebar />
                 </div>
 🔭 Contract Web Development Relational Concepts🌱 I'm currently learning React/Redux, Python, Java, Express, jQuery👯 I'm looking to collaborate on Any web audio or open source educational tools.
-
-🤝 I'm looking for help with Learning React
-
-👨‍💻 All of my projects are available at github
-
-📝 I regularly write articles on medium && Web-Dev-Resource-Hub
-
-💬 Ask me about Anything:
-
-📫 How to reach me bryan.guner@gmail.com
-
-⚡ Fun fact I played Bamboozle Music Festival at the Meadowlands Stadium Complex when I was 14.
+🤝 I'm looking for help with Learning React👨‍💻 All of my projects are available at github📝 I regularly write articles on medium && Web-Dev-Resource-Hub
+💬 Ask me about Anything:📫 How to reach me bryan.guner@gmail.com⚡ Fun fact I played Bamboozle Music Festival at the Meadowlands Stadium Complex when I was 14.
                 <div className="post-main">
                     <SEO title="About" />
                     <div className="mt-3">
