@@ -2,7 +2,7 @@
 title: 'Netlify CMS Open Authoring'
 tags: ["nodejs", "express","netlify","CMS"]
 published: true
-date: ''
+date: '15-9-2021'
 ---
 
 # Netlify CMS Open Authoring
