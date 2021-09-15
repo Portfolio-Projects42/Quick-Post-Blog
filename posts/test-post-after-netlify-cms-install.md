@@ -1,4 +1,5 @@
 ---
+title:''
 tags:
   - graphql
   - gatsby
