@@ -3,7 +3,7 @@ title: How To Add Backend Functionality To A Frontend App
 tags:
   - javascript
 published: true
-date: '2019-01-06'
+date: '5:01 PM, Wednesday, September 15, 2021'
 ---
 
 [Video at YouTube](https://youtu.be/vAP8NLDzGwc). <br>
