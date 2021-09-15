@@ -56,5 +56,3 @@ Wanna see the real beauty of this? Now we can put **“Edit this”** buttons on
 ![](https://i2.wp.com/css-tricks.com/wp-content/uploads/2019/11/edit-this.png?ssl=1)
 
 That’s what I’ve always wanted. It makes the site into a wiki! But there is enough public accountability (they have to use a real GitHub account) that I wouldn’t worry about much spam or obnoxious behavior.
-
-[Source](https://css-tricks.com/netlify-cms-open-authoring/)
