@@ -1,5 +1,5 @@
 ---
-title: 'Misplaced Middleware in Express'
+title: 'Netlify CMS Open Authoring'
 tags: ["nodejs", "express"]
 published: true
 date: '2018-12-29'
