@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "bgoonz <https://github.com/bgoonz>",
   "dependencies": {
+
     "@emotion/core": "^10.0.10",
     "bootstrap": "4.6.1",
     "emotion": "^10.0.9",
@@ -33,9 +34,10 @@
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
     "react-icons": "^3.7.0"
+
   },
   "devDependencies": {
-    "prettier": "^1.17.1"
+    "prettier": "1.17.1"
   },
   "keywords": [
     "gatsby"
