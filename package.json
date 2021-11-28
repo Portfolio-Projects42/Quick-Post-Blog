@@ -28,10 +28,10 @@
     "netlify-cms-app": "2.15.59",
     "prismjs": "^1.23.0",
     "prop-types": "^15.7.2",
-    "react": "^16.8.6",
+    "react": "17.0.2",
     "react-bootstrap": "^1.0.0-beta.8",
     "react-custom-share": "^0.4.8",
-    "react-dom": "^16.8.6",
+    "react-dom": "17.0.2",
     "react-helmet": "^5.2.1",
     "react-icons": "^3.7.0"
 
