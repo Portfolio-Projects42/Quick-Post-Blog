@@ -33,9 +33,10 @@
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
     "react-icons": "^3.7.0"
+
   },
   "devDependencies": {
-    "prettier": "^1.17.1"
+    "prettier": "1.17.1"
   },
   "keywords": [
     "gatsby"
