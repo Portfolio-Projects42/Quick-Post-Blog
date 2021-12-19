@@ -35,7 +35,8 @@
     "react-icons": "3.7.0"
   },
   "devDependencies": {
-    "prettier": "1.17.1"
+    "prettier": "2.5.1"
+
   },
   "keywords": [
     "gatsby"
